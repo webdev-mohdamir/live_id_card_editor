@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Identity Card</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="container">
+
+        <div class="entry_form">
+            <label class="inp_lable" for="username">
+                Enter Name:
+                <input type="text" name="username" id="username" maxlength="15">
+            </label>
+
+            <label class="inp_lable" for="userImg">
+                Choose Image:
+                <input type="file" name="userImg" id="userImg" accept="image/png, image/jpeg">
+            </label>
+
+            <label class="inp_lable" for="userOccupation">
+                Occupation:
+                <input type="text" name="userOccupation" id="userOccupation" maxlength="15">
+            </label>
+
+            <label class="inp_lable" for="userExperience">
+                Work Experience:
+                <input type="text" name="userExperience" id="userExperience" maxlength="15">
+            </label>
+
+            <label class="inp_lable" for="userExperties">
+                Experties:
+                <input type="text" name="userExperties" id="userExperties" maxlength="35">
+            </label>
+        </div>
+
+        <!-- Identity Card -->
+        <div class="id_card" id="id_card">
+        
+            <div class="style_obj obj1"></div>
+            <div class="style_obj obj2"></div>
+            
+            <div class="avatar">
+                <img src="author.jpg" alt="card img" class="avatarImg">
+            </div>
+            
+            <span class="user_name" data-text="Mohd Amir">Mohd Amir</span>
+    
+            <div class="info">
+                <p>Occupation: <span class="occupation" data-text="Full Stack Developer">Full Stack Developer</span></p>
+                <p>Experience: <span class="experience" data-text="+2 Year">+2 Year</span></p>
+                <p>Experties: <span class="experties" data-text="HTML, CSS, JavaScript, GIT, MySQL, PHP">HTML, CSS, JavaScript, GIT, MySQL, PHP</span></p>
+            </div>
+    
+            <button id="print">Print</button>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
